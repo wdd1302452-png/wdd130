@@ -1,0 +1,77 @@
+body header {
+    max-width: 100%;
+    background-color: black;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-size: 3rem;
+    
+
+}
+
+main{
+text-align: center;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+
+picture img {
+    width: 40%;
+    height: auto;
+    
+    box-shadow: 0 0 30px black;
+    
+}
+
+main section {
+    background-color: rgb(206, 206, 206);
+    color: black;
+    max-width: 40%;
+    max-height: auto;
+    margin-left: 30%;
+    
+}
+
+main section h2 {
+    
+    margin: 2rem;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+}
+
+main section ul {
+    
+    text-align: left;
+    font-size: 21px;
+    padding: 10px;
+    margin-left: 60px;
+   
+   
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+main section p {
+    text-align: left;
+    font-size: 21px;
+    padding: 10px;
+    
+    color: black;
+    margin: 30px;
+    line-height: 30px;
+    
+}
