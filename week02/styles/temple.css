@@ -1,77 +1,130 @@
-body header {
-    max-width: 100%;
-    background-color: black;
-    justify-content: center;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-size: larger;
-    font-size: 3rem;
-    
 
+* {
+  box-sizing: border-box;      
+  margin: 0;
+  padding: 0;
 }
 
-main{
-text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 1.8rem;           
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }
 
 main h1 {
-    font-size: 3rem;
+  font-size: 2.2rem;
+  margin: 1rem 0;
 }
 
 
 picture img {
-    width: 40%;
-    height: auto;
-    
-    box-shadow: 0 0 30px black;
-    
+  max-width: 100%;              
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 0 0 30px black;
+             
 }
+
 
 main section {
-    background-color: rgb(206, 206, 206);
-    color: black;
-    max-width: 40%;
-    max-height: auto;
-    margin-left: 30%;
-    
+  background-color: rgb(206, 206, 206);
+  color: black;
+  margin: 1rem ;
+  padding: 1.5rem;
+  
+  
 }
 
-main section h2 {
-    
-    margin: 2rem;
-    text-align: left;
-    border-bottom: 1px solid black;
-    padding: 10px;
 
+main section h2 {
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+main section p,
+main section ul {
+  text-align: left;
+  font-size: 1.1rem;            
+  line-height: 2;
+  padding: 0 0.5rem;
 }
 
 main section ul {
-    
-    text-align: left;
-    font-size: 21px;
-    padding: 10px;
-    margin-left: 60px;
-   
-   
+  list-style: none;
+  margin-left: 0;
+}
+
+main section ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+main section ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
 }
 
 
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
-main section p {
-    text-align: left;
-    font-size: 21px;
-    padding: 10px;
-    
-    color: black;
-    margin: 30px;
-    line-height: 30px;
-    
+
+@media (min-width: 768px) {
+  header {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+  }
+
+  main h1 {
+    font-size: 3.5rem;
+  }
+
+  main section {
+    max-width: 50%;             
+    margin: 2rem auto;
+  }
+
+  main section h2 {
+    font-size: 2.2rem;
+  }
+
+  main section p,
+  main section ul {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+
+  picture img {
+    width: 50%;                 
+  }
 }
