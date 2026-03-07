@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,87 +6,68 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 100%;
-    text-align: center;
+    line-height: 1.6;
 }
 
-
 header {
-    
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
     background-color: black;
     color: white;
-    font-size: 2em;
-    padding: 1rem 0rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
 
-:root {
-    
-}
-
 main {
-    height: var(--main-height);
-    max-width: 800px;
-    margin: 0  auto;
+
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px;
     text-align: center;
-    padding: 10px;
-    overflow: hidden;
-    display: block;
-    margin-top: 3.5em;
-    
-    
-
-
+    padding-top: 80px;
 }
 
-main h1 {
-    font-size: 45px;
-    padding: 1rem 0rem 0rem 0rem;
-}
-
-
-
-main picture img {
-    width: 60%;
-    margin: 1rem;
+img {
+    width: 100%;
+    height: auto;
     box-shadow: 0 0 30px green;
 }
 
-main section {
-    width: 470px;
-    padding: 1rem;
-    margin: 0 auto;
-    background-color: rgb(211, 207, 207);
-    color: black;
-    text-align: left;
-    border-bottom:  1em solid white;
+section {
+margin: 20px  0;
+padding: 10px;
+background-color: rgb(221, 215, 215);
+border: 1px solid rgb(44, 238, 76);
+font-size: .9rem;
+}
+section p {
+margin: 10px;
+width: 90%;
 }
 
-main section h2 {
+section h2 {
+    margin: 10px;
     border-bottom: 1px solid black;
-    padding: 0rem 0rem 1rem;
+    padding-bottom: 5px;
+    width: 90%; 
 
 }
 
-
-main section p {
-    max-width: 350px;
-    padding: 1em;
-    line-height: 1.5rem;
+ul {
+margin: 10px 20px;
 }
 
-main section ul  {
-    max-width: 350px;
-    padding: 1.5em;
-    line-height: 1.5rem;
-}
 
 footer {
-    background-color: black;
-    padding: 1em 0;
-    color: white;
-    font-size: 1.5em;
+font-size: .9rem;
+background-color: black;
+color: white;
+padding: 10px;
+text-align: center;
 }
