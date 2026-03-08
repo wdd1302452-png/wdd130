@@ -6,11 +6,13 @@ nav {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    display: inline;
  }
  h1{
     color: darkblue;
  }
- img {
+ main img {
     width: 20%;
     height: 10%;
     border: 1px solid black;
@@ -19,9 +21,31 @@ nav {
     box-sizing: border-box;
  }
  p {
-    padding: 10px;
+    padding: 0px;
  }
  .p1 {
     background-color: black;
     color: white;
+ }
+
+ aside {
+   width: 840px;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgb(0 0 0 /  0.2);
+   background-color: rgb(248, 241, 248);
+   color: darkblue;
+   text-align: center;
+   
+ }
+ aside img {
+   width: 200px;
+   height: auto;
+ }
+
+ footer {
+   margin-top: 10px;
+   border-top: 1px solid rgb(0 0 0 /  0.2);
+   padding: 2px;
+   text-align: center;
  }
