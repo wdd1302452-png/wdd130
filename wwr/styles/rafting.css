@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--background-color);
-    color: var(--accent2-color);
+    color: var(--text-color);
     padding: 20px;
     margin: var(--default-margin);
     
@@ -92,7 +92,7 @@ h1 {
 }
 
 
-article {
+.hero article {
     position: absolute;
     bottom: 0%;
     background-color: var(--secondary-color);
@@ -109,6 +109,11 @@ article p {
     line-height: 1.4;
     text-align: left;
     word-break: break-word;
+    margin: 0;
+}
+
+article h3 {
+    font-size: small;
 }
 
 
