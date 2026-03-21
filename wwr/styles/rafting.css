@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --primary-color: #055a05; /* forest green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #e9c46a; /* light golden yellow */
+  --heading-font: "Times New Roman", "Georgia", serif;
+  --body-font: Arial, Helvetica, sans-serif;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --default-margin: 0 0 1rem 0;
+    --default-padding: 1rem; 
+    --color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    margin: var(--default-margin);
+    
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+.socialmedia a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero {
+   position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--color);
+}
+
+
+article {
+    position: absolute;
+    bottom: 0%;
+    background-color: var(--secondary-color);
+    margin: 0 2rem 1rem 2rem;
+    height: 110px;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+article p {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: left;
+    word-break: break-word;
+}
+
+
+.hero article img {
+    width: 60px;
+    height: auto;
+    float: right;
+    border: 1px solid white
+    
+}
+
+
+section h2 {
+    background-color: var(--accent1-color);
+    color: var(--color);
+    text-align: center;
+    
+}
+
+section {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+footer {
+    background-color: var(--background-color);
+    color: var(--accent1-color);
+    text-align: left;
+    padding: 10px;
+    border-top: 1px solid var(--accent1-color);
+    line-height: 1px;
+    font-size: small;
+}
