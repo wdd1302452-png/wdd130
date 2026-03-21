@@ -8,7 +8,7 @@
   --primary-color: #055a05; /* forest green */
   --secondary-color: #f4a261; /* warm sand */
   --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
+  --accent2-color: #000; /* light golden yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
     --background-color: #f0f0f0;
@@ -47,7 +47,7 @@ h1, h2 {
 
 nav, p, section, article {
     margin: 16px;
-    padding: 8px;
+    padding: var(--default-padding);
 }
 
 .socialmedia {
@@ -84,7 +84,7 @@ h1 {
     position: absolute;
     top: 5%;
     width: 100%;
-    padding: 16px;
+    padding: var(--default-padding);
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
@@ -112,9 +112,9 @@ article p {
     padding-top: 0
 }
 
-article h3 {
+article h2 {
     font-size: 13px;
-    color: var(--color);
+    color: var(--accent2-color)
 }
 
 
@@ -144,7 +144,7 @@ footer {
     background-color: var(--background-color);
     color: var(--accent1-color);
     text-align: left;
-    padding: 10px;
+    padding: var(--default-padding);
     border-top: 1px solid var(--accent1-color);
     line-height: 1px;
     font-size: small;
