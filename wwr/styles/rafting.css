@@ -25,12 +25,35 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 20px;
-    margin: var(--default-margin);
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
 }
 
 header, main, footer {
@@ -139,6 +162,37 @@ section {
     margin: 1rem 0;
 }
 
+.adventures {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+figcaption {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
 
 footer {
     background-color: var(--background-color);
