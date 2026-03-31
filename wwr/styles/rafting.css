@@ -13,7 +13,6 @@
   --body-font: Arial, Helvetica, sans-serif;
     --background-color: #f0f0f0;
     --text-color: #333;
-    /* --default-margin removed to clear audit error */
     --default-padding: 1rem; 
     --color: #fff;
 }
