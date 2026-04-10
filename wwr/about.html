@@ -3,86 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the about page for the rafting company website. It provides information about the company, its mission, and its values.">
+    <meta name="description" content="Learn about WildFlow Rafting Company, our mission to provide safe adventures, and our history since 2018.">
     <meta name="author" content="Nwaigwe Okechukwu Augustine">
-    <title> About Us | WildFlow Rafting Company </title>
+    <title>About Us | WildFlow Rafting Company</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <div class="header-grid">
-        <img src="images/logo.jpg" alt="Rafting Company Logo"  width="100" height="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <img src="images/logo.jpg" alt="WildFlow Logo" width="100" height="100">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-       <div class="hero">
-        <img src="images/hero.jpg" alt="Rafting Adventure">
-        <h1>WildFlow Rafting</h1>
-        <article>
-            
-            <img src="images/happy-client.jpg" alt="Happy Rafting Client" >
-            <h2>Our Mission</h2>
-            <p>At WildFlow Rafting, we are dedicated to providing thrilling and safe rafting experiences for 
-                adventurers of all levels. Our team of experienced guides is passionate about sharing the beauty 
-                 of nature and the excitement of river journeys with our customers.<br>
-            </p>
-           
-        </article>
-       </div>
 
-       <section>
-        <h2>History</h2>
-        <p>WildFlow Rafting was founded in 2016 with a vision to bring people closer to nature through exciting rafting adventures. Over the years, we have grown into a trusted name in the rafting industry, known for our commitment to safety, environmental responsibility, and customer satisfaction.</p>
-         </section>
+    <main class="about-main">
+        <section class="about-hero">
+            <div class="about-hero-img">
+                <img src="images/hero.jpg" alt="Rafting Adventure at WildFlow">
+            </div>
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>
+                    At WildFlow Rafting, we are dedicated to providing thrilling and safe rafting experiences for 
+                    adventurers of all levels. Our team of experienced guides is passionate about sharing the beauty 
+                    of nature and the excitement of river journeys with our customers.
+                </p>
+                  <img src="images/happy-client.jpg" alt="Our early rafting days">
 
+            </div>
+        </section>
 
-         <section class="adventures">
-  <h2>Adventure Awaits You!</h2>
-  
-  <div class="adventure-grid">
-    <figure>
-      <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo rapid" width="300" height="200">
-      <figcaption>Los Dientes del Diablo</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="images/big-mallard.jpg" alt="Big Mallard rapid" width="300" height="200">
-      <figcaption>Big Mallard</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="images/half-day.jpg" alt="Half Day Adventure" width="300" height="200">
-      <figcaption>Half Day Adventure</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="images/family-rafting.jpg" alt="Family Rafting Trip" width="300" height="200">
-      <figcaption>Family Rafting</figcaption>
-    </figure>
-    
-    <figure>
-      <img src="images/wild-rapids.jpg" alt="Wild Rapids Experience" width="300" height="200">
-      <figcaption>Wild Rapids</figcaption>
-    </figure>
-  </div>
-</section>
+        <section class="history-container">
+            <div class="history-text">
+                <h2>Our History</h2>
+                <p>
+                    WildFlow Rafting was founded in 2018 with a vision to bring people closer to nature through 
+                    exciting rafting adventures. Over the years, we have grown into a trusted name 
+                    in the rafting industry, known for our commitment to safety, environmental responsibility, 
+                    and customer satisfaction.
+                </p>
+            </div>
+            <div class="history-img">
+                
+            </div>
+        </section>
 
+        <section class="adventure-section">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/big-mallard.jpg" alt="Big Mallard rapid">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/half-day.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/family-rafting.jpg" alt="Family Rafting Trip">
+                    <figcaption>Family Rafting</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="images/wild-rapids.jpg" alt="Wild Rapids Experience">
+                    <figcaption>Wild Rapids</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2026 WildFlow Rafting Company | Nwaigwe Okechukwu Augustine | All rights reserved</p>
-       <nav class="socialmedia">
-        <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook Icon"></a>
-        <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
-        <a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram Icon"></a>
-       </nav>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>

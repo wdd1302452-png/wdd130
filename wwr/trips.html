@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Trips | WildFlow Rafting Company</title>
+    <meta name="description" content="Choose your adventure. From family-friendly river drifts to expert-level Class V rapids. View our full trip schedule and seasonal pricing.">
+    <meta name="author" content="Nwaigwe Okechukwu Augustine">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="WildFlow Rafting Logo" width="100" height="100">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html" class="active">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-settings">
+                <select id="currency-select" aria-label="Select Currency">
+                    <option value="USD">USD ($)</option>
+                    <option value="NGN">NGN (₦)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="trips-main">
+        <section class="trips-hero">
+            <h1>Our Rafting Adventures</h1>
+            <div class="trips-cta">
+                <p>Find the perfect pace for your next journey.</p>
+                <a href="contact.html" class="cta-button shadow">Book Your Thrill</a>
+            </div>
+        </section>
+
+        <section class="trip-filters">
+            <div class="filter-bar">
+                <span>Filter by:</span>
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Beginner</button>
+                <button class="filter-btn">Intermediate</button>
+                <button class="filter-btn">Expert</button>
+            </div>
+        </section>
+
+        <section class="adventure-gallery">
+            <h2 class="section-title">Explore the Thrills</h2>
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <span class="badge">Family Choice</span>
+                    <img src="images/trip1.jpg" alt="A family enjoying a calm river float" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h3>Canyon Run</h3>
+                            <div class="trip-stats">
+                                <span>⏱ 3h</span> | <span>🌊 Class II</span>
+                            </div>
+                            <p>Navigate narrow stone walls and crystal clear drops.</p>
+                            <a href="contact.html" class="gallery-btn">Reserve Spot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <span class="badge bestseller">Bestseller</span>
+                    <img src="images/trip2.jpg" alt="Rafters pushing through a large white wave" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h3>Big Wave Day</h3>
+                            <div class="trip-stats">
+                                <span>⏱ 5h</span> | <span>🌊 Class IV</span>
+                            </div>
+                            <p>Maximum adrenaline. Tackle our biggest seasonal rapids.</p>
+                            <a href="contact.html" class="gallery-btn">Join the Crew</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/trip3.jpg" alt="A quiet river at sunset" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="overlay-text">
+                            <h3>Sunset Drift</h3>
+                            <div class="trip-stats">
+                                <span>⏱ 4h</span> | <span>🌊 Class I</span>
+                            </div>
+                            <p>A peaceful evening float ending with a riverside BBQ.</p>
+                            <a href="contact.html" class="gallery-btn">View Dates</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="trip-table-section">
+            <h2 class="table-title">Detailed Trip Comparison</h2>
+            <div class="table-responsive">
+                <table class="standard-table">
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Duration</th>
+                            <th>Difficulty</th>
+                            <th>Includes</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>The Family Floater</strong></td>
+                            <td>3 Hours</td>
+                            <td><span class="diff easy">Easy</span></td>
+                            <td>Snacks, Life Jacket</td>
+                            <td class="price-cell" data-usd="20">$20.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>The Rapid Rusher</strong></td>
+                            <td>5 Hours</td>
+                            <td><span class="diff med">Moderate</span></td>
+                            <td>Lunch, Full Gear</td>
+                            <td class="price-cell" data-usd="35">$35.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>The Wild Flow Expert</strong></td>
+                            <td>8 Hours</td>
+                            <td><span class="diff hard">Hard</span></td>
+                            <td>All Meals, Pro Photo</td>
+                            <td class="price-cell" data-usd="60">$60.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="currency-notice">*Prices displayed in USD. Final conversion to NGN occurs at checkout based on current bank rates.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>© 2026 WildFlow Rafting Company | Nwaigwe Okechukwu Augustine</p>
+                <p>Lagos, Nigeria | Adventure Certified</p>
+            </div>
+            <nav class="socialmedia">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
