@@ -202,3 +202,129 @@ footer {
     line-height: 1px;
     font-size: small;
 }
+
+/* --- Updated Contact Page Specific Styles --- */
+
+/* 1. Fix the Header/H1 Clash */
+.contact-main h1 {
+    position: relative; /* This pulls it out of the top/absolute flow */
+    top: 0;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    opacity: 1; /* Make it solid since there's no hero image */
+    background-color: var(--accent1-color);
+    color: var(--color);
+}
+
+/* 2. Office Info & Map */
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+    align-items: start; /* Align to top */
+}
+
+.info-box {
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* 3. Team Grid */
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    max-width: 180px;
+    aspect-ratio: 1 / 1; /* Keeps them perfectly circular */
+    object-fit: cover;
+}
+
+/* 4. Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+/* Fix for Radio Button labels */
+.radio-group label {
+    display: flex; /* Changed from block to flex */
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-item label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Button with your theme colors */
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
